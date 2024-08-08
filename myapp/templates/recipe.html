@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% load static $}
+{% block title %}Recipes - PowerPlates{% endblock %}
+
+{% block content %}
+    <h1 class="recipetitle">Your Recipes</h1>
+    <p class="sidenote">Browse through your collection of healthy, protein-packed recipes.</p>
+     <div class="food">
+        {% for recipe in recipes %}
+        <p class="foodtitle" style="font-weight: bold;">Title: {{ recipe.title }}</li>
+        <p>Ingredients: {{ recipe.ingredients }}</p>
+        <p>Instructions: {{ recipe.instructions }}</p>
+        <p> {{ recipe.carbohydrates|default:"N/A" }}g carbohydrate</p>
+        <p> {{ recipe.fats|default:"N/A" }}g fat</p>
+        <p> {{ recipe.proteins|default:"N/A" }}g protein</p>
+        {% endfor %}
+    </div>
+{% endblock %}

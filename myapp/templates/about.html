@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}About Us - PowerPlates {% endblock %}
+
+{% block content %}
+<div class="outer-container">
+    <div class="inner-container">
+        <h1 class="title">About PowerPlates</h1>
+        <p class="paragraph">At PowerPlates, we hope to bring you convinient organization for healthy eating. Using our recipe tracking software, we provide you with the tools to tract your recipes and their respective macronutrients. Our app gives you peace of mind and systemization to a healthy, sustainable way of eating.</p>
+    </div>
+    <div class="inner-container">
+        <h1 class="title">About the Founder</h1>
+        <p class="paragraph">My name is Manav Aggarwal, and I'm a current freshman at UC Berkeley studying Eletrical Engineering and Computer Science (EECS). I have personally struggled with healthy eating throughout my life, and am currently on a weightloss journey. I have lost over 60 pounds so far. I created this application to allow myself to accurately track my food intake, and I hope this app serves you as well as it did me.
+    </div>
+</div>
+<div class="centered-title">
+    <p>Some of My Favorite Eats 😁</p>
+</div>
+<div class="image-container">
+    <img src="{% static 'chicken.jpeg' %}" class="image">
+    <img src="{% static 'steak.jpeg' %}" class="image">
+    <img src="{% static 'desert.jpeg' %}" class="image">
+    <img src="{% static 'fish.jpeg' %}" class="image">
+    <img src="{% static 'beach.jpeg' %}" class="image">
+
+
+</div>
+
+{% endblock %}

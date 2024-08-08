@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}Two Factor- PowerPlates{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Two-Factor Authentication</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Authenticate</button>
+
+        {% if form.non_field_errors %}
+            <div class="alert alert-danger mt-3">
+                {{ form.non_field_errors }}
+            </div>
+        {% endif %}
+    </form>
+</div>
+{% endblock %}

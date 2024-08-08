@@ -1,0 +1,192 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h1, p {
+    position: relative;
+    color: black; /* Adjust text color for visibility */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add padding as needed */
+    z-index: 1;
+}
+
+footer {
+    color: #000000;
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+.navbar {
+    z-index: 1000; /* Higher z-index to ensure it stays above other content */
+    position: relative;
+}
+body {
+    background: repeating-linear-gradient(
+      90deg, /* Vertical stripes */
+      #b3e0ff, /* Pastel blue */
+      #b3e0ff 10%, /* Width of pastel blue stripe */
+      #ffccf2 10%, /* Start of pastel pink stripe */
+      #ffccf2 20%, /* Width of pastel pink stripe */
+      #ffffcc 20%, /* Start of pastel yellow stripe */
+      #ffffcc 30% /* Width of pastel yellow stripe */
+    );
+    background-size: 60px 100%; /* Adjust the size to make stripes more frequent */
+  }
+
+  .overlay-text:nth-of-type(1) {
+    top: 50%; /* Adjust to position the first line of text */
+    font-size: 45px;
+    border: 2px solid #fff;
+    padding: 14px;
+  text-align: center; /* Center-align text inside the border */
+}
+
+  
+  
+  .overlay-text:nth-of-type(2) {
+    top: 60%; /* Adjust to position the second line of text */
+    font-size: 20px;
+
+  }
+  
+  .title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+.outer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.centered-title {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 5px;
+    width: 25%;
+    margin: 20px 0 0 30%; /* Adjust the left margin as needed */
+}
+
+.image-container {
+    display: flex;
+    gap: 10px; /* Adjust the space as needed */
+  }
+  
+  .image {
+    width: 20%; /* Adjust the width as needed */
+    object-fit: contain;
+  }
+
+  input, textarea {
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.recipetitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0 0 35%; /* Adjust the left margin as needed */
+    width: 25%;
+
+}
+.sidenote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0 0 35%; /* Adjust the left margin as needed */
+    width: 25%;
+}
+
+.food {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the min width as needed */
+    gap: 10px; /* Space between items */
+    padding: 5px;
+  }
+  
+  .food p {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .freshout {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0 0 35%; /* Adjust the left margin as needed */
+    width: 25%;
+  }
+  
+  .freshin {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 50%;
+    margin: 20px 0 0 20%; /* Adjust the left margin as needed */
+  
+  }
+  .helptext {
+    display: none;
+}
+.freshin input {
+  text-align: left;
+  width: 100%;
+}

@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}Register - PowerPlates{% endblock %}
+{% block content %}
+<h1 class="freshin">Register Here</h1>
+<form method="post" class="freshin">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="freshin">Register</button>
+</form>
+{% endblock %}

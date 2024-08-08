@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %} Home - PowerPlates{% endblock %}
+
+{% block content %}
+<div class="container">
+    <video autoplay loop muted class="back-video">
+        <source src="{% static '/cooking.mp4' %}" type="video/mp4">
+    </video>
+<div class="overlay-text">Begin your Delicious Journey with PowerPlates Marketplace!</div>
+<div class="overlay-text">View Your Previous Recipes or Start a New One in the Bar Above!</div>
+</div>
+{% endblock %}
+
+
+
